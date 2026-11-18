@@ -1,0 +1,278 @@
+/* =================================
+   Global Button Styles
+   ================================= */
+
+/* Base Button Styles */
+.btn {
+    padding: 0px 11px;
+    border: none;
+    height: 32px;
+    /* border-radius: 8px; */
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* display: inline-flex; */
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: var(--text-sm);
+    /* text-align: center; */
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #0763D3;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #044691;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: white;
+    background-color: transparent;
+    color: #0D1722;
+    border: 1px solid #0D1722;
+    /* border-radius: 50px; */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Icon Button */
+.btn-icon {
+    padding: 8px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Small Icon Button */
+.btn-icon-sm {
+    padding: 0;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D8DBDE !important;
+    background: white;
+    cursor: pointer;
+}
+.btn-icon-sm:hover{
+    background-color: var(--bg-hover);
+}
+
+/* Ghost Icon Button */
+.btn-icon-ghost {
+    padding: 0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.btn-icon-ghost:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Ghost Small Icon Button */
+.btn-icon-sm-ghost {
+    padding: 0;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.btn-icon-sm-ghost:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Size Variations */
+.btn-sm {
+    padding: 6px 12px;
+}
+
+.btn-lg {
+    padding: 14px 28px;
+}
+
+/* Button States */
+.btn:disabled,
+button:disabled {
+    background-color: #e8ebed !important;
+    color: #79828d !important;
+    border-color: transparent !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn:disabled:hover,
+button:disabled:hover {
+    background-color: #e8ebed !important;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn:active,
+button:active {
+    transform: scale(0.98);
+}
+
+/* Button with Icon */
+.btn svg,
+button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-sm svg {
+    width: 14px;
+    height: 14px;
+}
+
+.btn-lg svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Loading State */
+.btn.loading,
+button.loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn.loading::after,
+button.loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spinner 0.6s linear infinite;
+}
+
+/* =================================
+   Specific Button Types
+   ================================= */
+
+/* AI Button */
+.ai-button {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-button::before {
+    content: '';
+    background: url("../../img/icon/ai.svg") no-repeat center;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.ai-button:hover {
+    /* transform: translateY(-2px); */
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); */
+}
+
+/* AI Summary Close Button */
+.ai-summary-close {
+    background: #FF5E57;
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-summary-close:hover {
+    background: #E04D45;
+    transform: scale(1.05);
+}
+
+/* Close Button */
+.close-btn {
+    background: transparent;
+    border: none;
+    color: #999;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* =================================
+   Animations
+   ================================= */
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

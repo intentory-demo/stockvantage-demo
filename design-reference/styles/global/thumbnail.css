@@ -1,0 +1,6 @@
+/* Thumbnail Styles */
+.thumbnail {
+    width: 48px;
+    height: 36px;
+    object-fit: cover;
+}

@@ -1,0 +1,108 @@
+/* =================================
+   Layout Styles
+
+   STRUCTURE:
+   body (display: flex)
+   ├── .sidebar
+   └── .main-content
+       └── .main-body
+           ├── [single column] .main-body-inner
+           └── [two column] .main-body-with-filter > .main-body-left + .filter-panel
+
+   USAGE:
+   - Single column: <div class="main-body"><div class="main-body-inner">
+   - Two column:    <div class="main-body main-body-with-filter"><div class="main-body-left">
+   ================================= */
+
+/* App Layout - applied to body */
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #F4F6F9;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Main body container
+   DEFAULT: vertical stack (single column pages)
+*/
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Two column layout with filter panel
+   USE: add this class when page has .filter-panel
+*/
+.main-body-with-filter {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Left content column
+   USE: only inside .main-body-with-filter
+   CONTAINS: .main-body-inner
+*/
+.main-body-left {
+    flex: 1;
+    min-width: 0;
+    padding: 0 0 0 32px;
+}
+
+/* Inner content wrapper
+   MAX-WIDTH: 1232px
+*/
+.main-body-inner {
+    width: 100%;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+/* Vertical stack layout
+   USE: Any container with uniformly-spaced children
+*/
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.stack-sm {
+    gap: 20px;
+}
+
+/* Section group - heading with related content
+   USE: Wrap heading + its related content together
+*/
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Two-column grid: wide left, narrow right
+   USE: Input panel + results panel, or main content + detail sidebar
+*/
+.content-wide-narrow {
+    display: grid;
+    grid-template-columns: minmax(650px, auto) minmax(min-content, 306px);
+    column-gap: 20px;
+}
+
+/* Two-column grid: narrow left, wide right
+   USE: Input form on left, large results display on right
+*/
+.content-narrow-wide {
+    display: grid;
+    grid-template-columns: minmax(min-content, 306px) minmax(650px, auto);
+    column-gap: 20px;
+}

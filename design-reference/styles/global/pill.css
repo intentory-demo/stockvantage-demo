@@ -1,0 +1,59 @@
+/* =================================
+   Pill & Badge Styles
+   ================================= */
+
+/* Base Pill/Badge Styles */
+.pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    min-height: 24px;
+    border-radius: 4px;
+    font-size: var(--text-sm);
+    text-align: center;
+    white-space: nowrap;
+    color: #0D1722;
+}
+
+/* Pill Color Variants */
+.pill-red {
+    background-color: #FFE2E2;
+}
+
+.pill-green {
+    background-color: #DCF7DD;
+}
+
+.pill-yellow {
+    background-color: #FFF1C0;
+}
+
+.pill-blue {
+    background-color: #E4F5FE;
+}
+
+.pill-gray {
+    background-color: #E8EBED;
+}
+
+/* Pill with Icon */
+.pill-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pill-icon svg,
+.pill-icon img {
+    width: 14px;
+    height: 14px;
+}
+
+/* Pill Group */
+.pill-group {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}

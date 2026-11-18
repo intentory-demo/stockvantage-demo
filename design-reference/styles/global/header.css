@@ -1,0 +1,61 @@
+/* =================================
+   Global Header Styles
+   ================================= */
+
+/* Main Header Container */
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0 0 12px 0;
+    padding: 0;
+    max-width: 1232px;
+}
+
+.header-description {  
+    color: var(--text-secondary);
+    font-size: var(--text-md);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Back Navigation (Optional) */
+.back-navigation {
+    width: 100%;
+}
+
+.back-navigation a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-secondary);
+    text-decoration: underline;
+    font-size: var(--text-sm);
+}
+
+.back-navigation img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Header Row */
+.header-inner {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Standardized Header Title */
+.header-title,
+.header h1 {
+    margin-bottom: 0;
+}
+
+/* Button Group (Optional) */
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+

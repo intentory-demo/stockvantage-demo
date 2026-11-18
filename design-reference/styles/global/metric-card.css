@@ -1,0 +1,80 @@
+/* =================================
+   Metric Card Styles
+   ================================= */
+
+/* Metric Cards Grid
+   USE: Wrap any number of .metric-card elements (2, 3, 4, 5...)
+   BEHAVIOR: Cards fill width equally; wraps to 2 rows at ~6+ cards
+*/
+.metric-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.metric-cards-grid > .metric-card {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Metric Card */
+.metric-card {
+    border: var(--border-light);
+    border-radius: 16px;
+    padding: 16px 20px;
+    background-color: white;
+}
+
+.metric-card-title-link {
+    text-decoration: none;
+}
+
+.metric-card-title {
+    color: #0C0C11;
+    margin-bottom: 4px;
+}
+
+/* When metric card title has tooltip functionality */
+.metric-card-title.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.metric-card-title .tooltip-trigger {
+    border-bottom: 2px dotted var(--border-default);
+}
+
+.metric-card-value {
+    margin-bottom: 0px;
+}
+
+.metric-card-value-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0px;
+}
+
+.metric-card-change {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.metric-card-change.positive {
+    color: #10B981;
+}
+
+.metric-card-change.negative {
+    color: #EF4444;
+}
+
+.metric-card-change.neutral {
+    color: #5E6976;
+}
+
+.trend-icon {
+    width: 16px;
+    height: 16px;
+}

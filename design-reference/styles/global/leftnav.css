@@ -1,0 +1,194 @@
+/* Left Navigation Styles */
+#leftnav {
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.leftnav {
+    width: 250px;
+    height: 100%;
+    background-color: #0D1722;
+    border-right: 1px solid #e5e7eb;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Left Navigation Logo */
+.leftnav-logo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+/* Left Navigation */
+.leftnav-nav {
+    flex: 1;
+    padding: 20px 0;
+    margin: 0;
+    background-color: #0D1722;
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Items */
+.nav-item {
+    margin-bottom: 4px;
+}
+
+/* Navigation Links */
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:hover .nav-icon {
+    color: #FFFFFF;
+}
+
+.nav-link.active {
+    background-color: rgba(7, 99, 211, 0.2);
+    color: #FFFFFF;
+}
+
+.nav-link.active .nav-icon {
+    color: #FFFFFF;
+}
+
+.nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #0763D3;
+}
+
+/* Navigation Icons */
+.nav-icon {
+    max-width: 18px;
+    max-height: 18px;
+    width: auto;
+    height: auto;
+    margin-right: 12px;
+    flex-shrink: 0;
+    color: #79828D;
+}
+
+/* Navigation Text */
+.nav-text {
+    color: inherit;
+}
+
+/* Parent Items */
+.nav-item-parent {
+    position: relative;
+}
+
+.nav-parent {
+    cursor: pointer;
+}
+
+/* Submenu Styles */
+.nav-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-item-parent.expanded .nav-submenu {
+    display: block;
+}
+
+/* Subitem Styles */
+.nav-subitem {
+    margin: 0;
+}
+
+.nav-sublink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 20px 6px 52px; /* Extra left padding for indentation */
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-sublink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-sublink.active {
+    background-color: #0763D3;
+    color: #FFFFFF;
+}
+
+/* Subtext */
+.nav-subtext {
+    color: inherit;
+}
+
+/* Badge Styles */
+.nav-badge {
+    background-color: #FFFFFF;
+    color: #0D1722;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* External Link Icon */
+.external-link-icon {
+    margin-left: 4px;
+    color: #79828D;
+}
+
+/* Info Icon */
+.info-icon {
+    margin-left: 4px;
+    color: #79828D;
+}
+
+
+
+/* Custom Scrollbar */
+.leftnav::-webkit-scrollbar {
+    width: 6px;
+}
+
+.leftnav::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.leftnav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.leftnav::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

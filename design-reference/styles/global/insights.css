@@ -1,0 +1,91 @@
+/* Insights Card Styles */
+
+.insights-section {
+    margin-top: 24px;
+}
+
+.insights-heading {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: #0C0C11;
+    margin-bottom: 16px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.insight-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.insight-card {
+    background: white;
+    border: 1px solid #D8DBDE;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.insight-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.insight-card-image-container {
+    width: 100px;
+    height: 100px;
+    background-color: #F6F7F8;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.insight-card-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.insight-card-details {
+    flex: 1;
+}
+
+.opportunity-label {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    color: #5E6976;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.insight-card-title {
+    font-size: var(--text-md);
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    text-decoration: underline;
+    display: block;
+}
+
+.insight-card-title:hover {
+    text-decoration: none;
+}
+
+.insight-card-description {
+    font-size: var(--text-md);
+    color: #0D1722;
+    /* color: #6B7280; */
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 12px;
+}

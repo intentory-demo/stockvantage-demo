@@ -1,0 +1,122 @@
+/* Global Border Style and Deal Rating Colors */
+:root {
+    --color-primary: #0763D3;
+
+    --border-default: 1px solid #79828D;
+    --border-light: 1px solid #D8DBDE;
+    --border-tertiary-1: 1px solid var(--color-primary);
+    --fill-tertiary-1: 1px solid var(--color-primary);
+
+    /* Deal Rating Colors */
+    --color-great-deal: #078A0B;
+    --color-good-deal: #09AD0E;
+    --color-fair-deal: #FFC651;
+    --color-high-priced: #FF7F57;
+    --color-over-priced: #BD1A2E;
+    --border-great-deal: 1px solid #078A0B;
+    --border-good-deal: 1px solid #09AD0E;
+    --border-fair-deal: 1px solid #FFC651;
+    --border-high-priced: 1px solid #FF7F57;
+    --border-over-priced: 1px solid #BD1A2E;
+
+    /* Vehicle Type Colors */
+    --color-compact: #3B82F6;
+    --color-sedans: #06B6D4;
+    --color-suv-co: #8B5CF6;
+    --color-truck: #EC4899;
+    --color-luxury: #6366F1;
+
+    /* Trend Colors */
+    --color-trend-positive: #078A0B;
+    --color-trend-negative: #DC1D34;
+
+    /* Interaction States */
+    --bg-hover: rgba(0, 0, 0, 0.04);
+    --bg-disabled: rgba(255, 255, 255, 0.40);
+
+    /* Surface Colors */
+    --surface-green: #DCF7DD;
+    --surface-yellow: #FFF1C0;
+    --surface-red: #FFE2E2;
+    --surface-blue: #E4F5FE;
+    --surface-gray: #E8EBED;
+}
+
+/* Apply default border to common elements */
+input,
+select,
+textarea,
+.card,
+.box,
+.border {
+    border: var(--border-default);
+}
+
+/* Light border variant */
+.border-light {
+    border: var(--border-light);
+}
+
+/* Deal rating border variants */
+.border-great-deal {
+    border: var(--border-great-deal);
+}
+
+.border-good-deal {
+    border: var(--border-good-deal);
+}
+
+.border-fair-deal {
+    border: var(--border-fair-deal);
+}
+
+.border-high-priced {
+    border: var(--border-high-priced);
+}
+
+.border-over-priced {
+    border: var(--border-over-priced);
+}
+
+/* Deal rating background color utilities */
+.bg-great-deal {
+    background-color: var(--color-great-deal);
+}
+
+.bg-good-deal {
+    background-color: var(--color-good-deal);
+}
+
+.bg-fair-deal {
+    background-color: var(--color-fair-deal);
+}
+
+.bg-high-priced {
+    background-color: var(--color-high-priced);
+}
+
+.bg-over-priced {
+    background-color: var(--color-over-priced);
+}
+
+/* Deal rating text color utilities */
+.text-great-deal {
+    color: var(--color-great-deal);
+}
+
+.text-good-deal {
+    color: var(--color-good-deal);
+}
+
+.text-fair-deal {
+    color: var(--color-fair-deal);
+}
+
+.text-high-priced {
+    color: var(--color-high-priced);
+}
+
+.text-over-priced {
+    color: var(--color-over-priced);
+}
+

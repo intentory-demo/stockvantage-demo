@@ -1,0 +1,17 @@
+/* Radio Button Styles */
+.radio {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: 0;
+    accent-color: #0763D3;
+}
+.radio-label {
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+    font-weight: 500;
+}    
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}

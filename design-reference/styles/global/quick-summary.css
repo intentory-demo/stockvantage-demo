@@ -1,0 +1,31 @@
+/* =================================
+   Quick Summary Component
+   ================================= */
+
+.quick-summary {
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.quick-summary-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.quick-summary-content {
+    font-size: var(--text-md);
+    line-height: 1.5;
+}
+
+.quick-summary-title {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.quick-summary-text {
+    color: #374151;
+}
